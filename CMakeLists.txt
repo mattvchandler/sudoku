@@ -15,6 +15,3 @@ endif()
 add_executable(sudoku
     sudoku.cpp
     )
-add_executable(sudoku_old
-    sudoku_old.cpp
-    )
