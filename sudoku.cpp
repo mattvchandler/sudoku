@@ -149,10 +149,10 @@ template <std::size_t size> Alphabet<size> possible_moves(const Board<size> & bo
             poss[get_alphabet_index(board[i][col])] = '0';
     }
     for(std::size_t r = (row / box_size) * box_size;
-        r < (row / box_size) * (box_size + 1); ++r)
+        r < (row / box_size) * box_size + box_size; ++r)
     {
         for(std::size_t c = (col / box_size) * box_size;
-            c < (col / box_size) * (box_size + 1); ++c)
+            c < (col / box_size) * box_size + box_size; ++c)
         {
             if(board[r][c] != '0')
                 poss[get_alphabet_index(board[r][c])] = '0';
