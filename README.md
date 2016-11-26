@@ -9,6 +9,9 @@ may be really slow for anything above 9x9.
 Input is a simple text file, with the following properties:
 
 * Each line contains a row
+* Each row contains a number or letter for each filled square
+    * 1-9 and A-Z are allowed, depending on the size of the puzzle
+    * 0 is used to mark a empty square
 * Each number in a row is separated with one or more of the following:
     * space
     * tab
@@ -16,6 +19,5 @@ Input is a simple text file, with the following properties:
     * semicolon
     * quote
     * nothing
-* 0 is used to mark a empty square
 
 Most forms of CSV or other delimited text files will work fine
