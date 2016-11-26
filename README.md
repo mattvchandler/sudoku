@@ -2,7 +2,7 @@
 
 Just a simple brute-force sudoku solver.
 
-Can solve any 'standard' nxn puzzle, where n is a perfect square, although it
+Can solve any 'standard' n x n puzzle, where n is a perfect square, although it
 may be really slow for anything above 9x9.
 
 ## Input file format
