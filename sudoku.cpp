@@ -58,7 +58,7 @@ bool is_square(std::size_t n)
 // size must be a perfect square
 template <std::size_t size> void disp_board(const Board<size> & board)
 {
-    constexpr std::size_t box_size = sqrt(size);
+    const std::size_t box_size = std::sqrt(size);
 
     std::cout<<"+-";
     for(std::size_t c = 0; c < size; ++c)
@@ -136,7 +136,7 @@ inline std::size_t get_alphabet_index(const char c)
 template <std::size_t size> Alphabet<size> possible_moves(const Board<size> & board,
     const std::size_t row, const std::size_t col)
 {
-    constexpr std::size_t box_size = sqrt(size);
+    const std::size_t box_size = std::sqrt(size);
 
     auto poss = list_alphabet<size>();
 
